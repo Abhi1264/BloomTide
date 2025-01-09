@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import ratingvector from "../assets/ratingvector.svg";
@@ -6,7 +6,7 @@ import mainimg from "../assets/mainimg.jpg";
 import mahaaai from "../assets/mahaaai.avif";
 
 const Hero = () => {
-    return (
+    const heroContent = useMemo(() => (
         <>
             <div className="relative">
                 <div className="absolute inset-0 flex justify-center md:justify-center items-center -z-50 md:mt-96 mt-36">
@@ -18,9 +18,11 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-[#08BFF7] to-[#3386EE] text-transparent bg-clip-text">
                         <span className="hidden md:inline-block">Innovative Enterprise Web &<br /></span>
                         <span className="hidden md:inline-block">Mobile App Development</span>
-                        <span className="md:hidden block">Innovative Enterprise Web & Mobile App Development</span></h1>
+                        <span className="md:hidden block">Innovative Enterprise Web & Mobile App Development</span>
+                    </h1>
                     <p className="mt-6 text-[#1f1f1f] text-md md:text-lg max-w-4xl mx-auto">
-                        Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.</p>
+                        Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.
+                    </p>
                     <div className="flex items-center justify-center mt-4 space-x-1">
                         <IoIosStar className="text-[#FFC107]" />
                         <IoIosStar className="text-[#FFC107]" />
@@ -50,7 +52,9 @@ const Hero = () => {
                 </div>
             </div>
         </>
-    );
+    ), []);
+
+    return heroContent;
 };
 
 export default Hero;

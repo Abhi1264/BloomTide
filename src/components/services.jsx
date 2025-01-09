@@ -1,59 +1,59 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { IoCodeSlash, IoColorPalette, IoSettings } from "react-icons/io5";
 import { LuTabletSmartphone } from "react-icons/lu";
 import { GrLineChart } from "react-icons/gr";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const services = [
-  {
-    id: "web-dev",
-    number: "01",
-    title: "Web App Development",
-    description: "We build responsive and robust web applications tailored to your needs.",
-    icon: <IoCodeSlash className="w-8 h-8" />
-  },
-  {
-    id: "branding",
-    number: "02",
-    title: "Branding And Identity",
-    description: "Create memorable brand experiences through expert design and strategy services that resonate with your target audience.",
-    icon: <IoColorPalette className="w-8 h-8" />
-  },
-  {
-    id: "mobile-dev",
-    number: "03",
-    title: "Mobile Application Development",
-    description: "Build powerful, user-friendly mobile applications that engage users and drive business growth across all platforms.",
-    icon: <LuTabletSmartphone className="w-8 h-8" />
-  },
-  {
-    id: "software",
-    number: "04",
-    title: "Software Solution",
-    description: "Develop custom software solutions tailored to your specific business needs and operational requirements.",
-    icon: <IoSettings className="w-8 h-8" />
-  },
-  {
-    id: "seo",
-    number: "05",
-    title: "SEO and Performance Optimization",
-    description: "Improve your digital presence and search rankings through comprehensive SEO and performance optimization strategies.",
-    icon: <GrLineChart className="w-8 h-8" />
-  },
-  {
-    id: "ecommerce",
-    number: "06",
-    title: "E - Commerce Solution",
-    description: "Create powerful online stores with seamless shopping experiences and robust backend management systems.",
-    icon: <MdOutlineShoppingCart className="w-8 h-8" />
-  }
-];
-
 export default function Services() {
+  const services = useMemo(() => [
+    {
+      id: "web-dev",
+      number: "01",
+      title: "Web App Development",
+      description: "We build responsive and robust web applications tailored to your needs.",
+      icon: <IoCodeSlash className="w-8 h-8" />
+    },
+    {
+      id: "branding",
+      number: "02",
+      title: "Branding And Identity",
+      description: "Create memorable brand experiences through expert design and strategy services that resonate with your target audience.",
+      icon: <IoColorPalette className="w-8 h-8" />
+    },
+    {
+      id: "mobile-dev",
+      number: "03",
+      title: "Mobile Application Development",
+      description: "Build powerful, user-friendly mobile applications that engage users and drive business growth across all platforms.",
+      icon: <LuTabletSmartphone className="w-8 h-8" />
+    },
+    {
+      id: "software",
+      number: "04",
+      title: "Software Solution",
+      description: "Develop custom software solutions tailored to your specific business needs and operational requirements.",
+      icon: <IoSettings className="w-8 h-8" />
+    },
+    {
+      id: "seo",
+      number: "05",
+      title: "SEO and Performance Optimization",
+      description: "Improve your digital presence and search rankings through comprehensive SEO and performance optimization strategies.",
+      icon: <GrLineChart className="w-8 h-8" />
+    },
+    {
+      id: "ecommerce",
+      number: "06",
+      title: "E - Commerce Solution",
+      description: "Create powerful online stores with seamless shopping experiences and robust backend management systems.",
+      icon: <MdOutlineShoppingCart className="w-8 h-8" />
+    }
+  ], []);
+
   return (
     <div className="container mx-auto px-6 md:px-12 pt-12">
       <div className="flex flex-col md:flex-row">
-      <div>
+        <div>
           <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
             Our Services
           </h3>

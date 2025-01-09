@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 function Testimonials() {
-    const testimonials = [
+    const testimonials = useMemo(() => [
         {
             text: "Bloomtide Consulting helped transform our operations with tailored solutions that boosted efficiency and productivity. Their team was professional, flexible, and delivered real results. Highly recommend!",
             logo: null,
@@ -31,7 +31,7 @@ function Testimonials() {
             title: "Co-Founder, Company",
             image: null,
         },
-    ];
+    ], []);
 
     return (
         <div className="lg:px-24 py-12 bg-[#f9f9f9] relative overflow-hidden">

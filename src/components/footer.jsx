@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import logo from '../assets/logowhite.svg';
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import download from '../assets/download.svg';
+
 function Footer() {
-    const services = [
+    const services = useMemo(() => [
         "Web Application Development",
         "Mobile Application Development",
         "SEO and Performance Optimization",
         "Branding And Identity",
         "Software Solution",
         "E - Commerce Solution"
-    ];
+    ], []);
 
-    const quickLinks = [
+    const quickLinks = useMemo(() => [
         "Home",
         "Services",
         "Contact Us",
@@ -21,7 +22,7 @@ function Footer() {
         { text: "Career", isNew: true },
         "Blog",
         "Case Studies"
-    ];
+    ], []);
 
     return (
         <footer className="bg-[#000b0f] text-[#bbbbb9] pt-16 pb-8 px-4 sm:px-6 lg:px-4">
@@ -70,7 +71,8 @@ function Footer() {
 
                 <hr className="border-[#232323] mt-8 mb-4" />
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-4 lg:space-x-64 space-y-4 md:space-y-0">
-                    <div><button className="inline-flex items-center space-x-2">
+                    <div>
+                        <button className="inline-flex items-center space-x-2">
                             <img src={download} className="w-8 h-8" />
                             <div className="text-left">
                                 <p className="text-sm font-semibold">Company Brochure</p>
@@ -85,7 +87,6 @@ function Footer() {
                         {[FaFacebookF, FaLinkedinIn, FaWhatsapp, FaXTwitter, FaInstagram].map((Icon, index) => (
                             <button
                                 key={index}
-                                href="#"
                                 className="bg-[#232323] hover:bg-primaryBlue transition-colors p-2 rounded-full"
                             >
                                 <Icon className="w-5 h-5" />

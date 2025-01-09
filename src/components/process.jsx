@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const Process = () => {
-    return (
+    const content = useMemo(() => (
         <div className="container mx-auto px-6 md:px-12">
             <div className="flex flex-col sm:flex-col lg:flex-row items-center sm:items-start sm:gap-10">
                 <div className="lg:w-1/2 space-y-6">
@@ -15,7 +15,7 @@ const Process = () => {
                         </h1>
                     </div>
                     <img
-                        src="https://via.placeholder.com/600x400"
+                        src="https://picsum.photos/600/400"
                         alt="Process image 1"
                         className="rounded-lg w-full h-auto object-cover"
                     />
@@ -60,14 +60,16 @@ const Process = () => {
                         </div>
                     </div>
                     <img
-                        src="https://via.placeholder.com/600x200"
+                        src="https://picsum.photos/400/135"
                         alt="Process image 2"
                         className="rounded-lg w-full h-auto object-cover"
                     />
                 </div>
             </div>
         </div>
-    );
+    ), []);
+
+    return content;
 };
 
 export default Process;
