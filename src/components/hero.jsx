@@ -6,6 +6,9 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 import ratingvector from "../assets/ratingvector.svg";
 import mainimg from "../assets/mainimg.jpg";
 import mahaaai from "../assets/mahaaai.avif";
+import seo from "../assets/seo.jpg";
+import appdev from "../assets/appdev.jpg";
+import software from "../assets/software.jpg";
 
 const Hero = () => {
     useEffect(() => {
@@ -21,7 +24,7 @@ const Hero = () => {
                     </h1>
                 </div>
             </div>
-            <div className="text-center lg:my-36 md:my-16 my-8" data-aos="zoom-out" data-aos-once="false">
+            <div className="text-center lg:mt-36 mt-28 mb-16 md:mb-20" data-aos="zoom-out" data-aos-once="false">
                 <div className="container mx-auto px-4">
                     <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-[#08BFF7] to-[#3386EE] text-transparent bg-clip-text" data-aos="fade-up" data-aos-once="false">
                         <span className="hidden md:inline-block">Innovative Enterprise Web &<br /></span>
@@ -29,7 +32,8 @@ const Hero = () => {
                         <span className="md:hidden block">Innovative Enterprise Web & Mobile App Development</span>
                     </h1>
                     <p className="mt-6 text-[#1f1f1f] text-md md:text-lg max-w-4xl mx-auto">
-                    Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.</p>
+                        Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.
+                    </p>
                     <div className="flex items-center justify-center mt-4 space-x-1">
                         <IoIosStar className="text-[#FFC107]" />
                         <IoIosStar className="text-[#FFC107]" />
@@ -48,8 +52,31 @@ const Hero = () => {
                             <MdOutlineArrowForwardIos />
                         </button>
                     </div>
-                    <div className="images flex items-center justify-center mt-8 -z-50">
-                        <img src={mainimg} alt="" className="rounded-xl w-3/4" />
+                    <div className="images relative flex items-center justify-center mt-8 -z-50">
+                        <img
+                            draggable={false}
+                            src={seo}
+                            alt=""
+                            className="hidden md:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-lg -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
+                        />
+                        <img
+                            draggable={false}
+                            src={software}
+                            alt=""
+                            className="hidden md:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-lg -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
+                        />
+                        <img
+                            draggable={false}
+                            src={mainimg}
+                            alt=""
+                            className="rounded-xl w-3/4 relative z-10"
+                        />
+                        <img
+                            draggable={false}
+                            src={appdev}
+                            alt=""
+                            className="hidden md:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-lg translate-x-1/2 -translate-y-1/2 z-20"
+                        />
                     </div>
                     <p className="py-8 text-[#647491]">Trusted by 100+ businesses:</p>
                     <div className="flex items-center justify-center space-x-2 md:space-x-20 overflow-x-hidden">
