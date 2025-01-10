@@ -15,7 +15,7 @@ const Contact = () => {
 
     const memoizedContact = useMemo(() => {
         return (
-            <div data-aos="fade-down" className="flex flex-col gap-8 lg:gap-0 lg:flex-row mx-auto justify-between items-center bg-[#f9f9f9] p-16 lg:py-20 lg:px-36">
+            <div data-aos="fade-down" className="flex flex-col gap-8 lg:gap-0 lg:flex-row mx-auto justify-between items-center bg-[#f9f9f9] p-8 lg:py-20 lg:px-36">
                 <div className="lg:w-1/2 mb-8 md:mb-0">
                     <h2 className="text-4xl md:text-5xl font-bold text-black mb-12 lg:mb-6">
                         Have a Project Idea?
@@ -27,7 +27,7 @@ const Contact = () => {
                     />
                 </div>
 
-                <div className="lg:w-1/2 w-full lg:px-6 px-16 py-4 bg-white rounded-lg shadow-sm">
+                <div className="lg:w-1/2 w-full lg:px-6 px-8 py-8 bg-white rounded-lg shadow-sm">
                     <form className="space-y-6">
                         <div>
                             <label htmlFor="fullName" className="block text-sm font-medium text-black">

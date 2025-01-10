@@ -3,15 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function FAQ() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            offset: 400,
-            once: false,
-            anchorPlacement: 'top-bottom',
-        });
-    }, []);
-
     const [openFAQ, setOpenFAQ] = useState(null);
 
     const faqs = useMemo(() => [
@@ -40,36 +31,38 @@ function FAQ() {
     const toggleFAQ = (index) => {
         setOpenFAQ(openFAQ === index ? null : index);
     };
+    useEffect(() => {
+            AOS.init({
+                duration: 1000,
+                offset: 200,
+                once: false,
+                anchorPlacement: 'top-bottom',
+            });
+        }, []);
 
     return (
-        <div data-aos="fade-up" className="container mx-auto px-6 md:px-12 py-12">
+        <div data-aos="fade-left" className="container mx-auto px-6 md:px-12 py-12">
             <div className="flex flex-col md:flex-row">
                 <div>
-                    <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
-                        faqs
-                    </h3>
-                    <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-snug md:leading-normal">
-                        Have Questions?
-                    </h1>
+                    <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">faqs</h3>
+                    <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-snug md:leading-normal">Have Questions?</h1>
                 </div>
             </div>
 
-            <div className="w-full">
+            <div>
                 {faqs.map((item, index) => (
                     <div key={index} className="mt-6 border-t border-[#D7DBDE]">
                         <button
                             className="flex justify-between items-center w-full text-left py-4 focus:outline-none"
                             onClick={() => toggleFAQ(index)}>
-                            <h3 className={`text-xl font-medium ${openFAQ === index ? "text-[#0A72F4]" : "text-black"}`}>
+                            <h3 className={`text-xl md:text-2xl font-medium ${openFAQ === index ? "text-[#0A72F4]" : "text-black"}`}>
                                 {item.question}
                             </h3>
-                            <span className={`text-2xl font-semibold transform transition-transform duration-300 ${openFAQ === index ? "text-[#0A72F4] rotate-45" : "text-black"}`}>
-                                +
-                            </span>
+                            <span className={`text-xl md:text-2xl font-semibold transform transition-transform duration-300 ${openFAQ === index ? "text-[#0A72F4] rotate-45" : "text-black"}`}>+</span>
                         </button>
                         <div
-                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-[9999px]" : "max-h-0"}`}>
-                            <p className="mt-2 text-md text-[#49617F]">
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-full" : "max-h-0"}`}>
+                            <p className="mt-2 text-lg text-[#49617F]">
                                 {item.answer}
                             </p>
                         </div>
