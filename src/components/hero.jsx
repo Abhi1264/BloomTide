@@ -57,13 +57,13 @@ const Hero = () => {
                             draggable={false}
                             src={seo}
                             alt=""
-                            className="hidden md:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-lg -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
+                            className="hidden md:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
                         />
                         <img
                             draggable={false}
                             src={software}
                             alt=""
-                            className="hidden md:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-lg -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
+                            className="hidden md:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
                         />
                         <img
                             draggable={false}
@@ -75,7 +75,7 @@ const Hero = () => {
                             draggable={false}
                             src={appdev}
                             alt=""
-                            className="hidden md:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-lg translate-x-1/2 -translate-y-1/2 z-20"
+                            className="hidden md:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-2xl translate-x-1/2 -translate-y-1/2 z-20"
                         />
                     </div>
                     <p className="py-8 text-[#647491]">Trusted by 100+ businesses:</p>
