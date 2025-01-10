@@ -1,10 +1,21 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import questions from "../assets/questions.jpg";
 
 const Contact = () => {
+    useEffect(() => {
+            AOS.init({
+                        duration: 500,
+                        offset: 400,
+                        once: false,
+                        anchorPlacement: 'top-bottom',
+                    });
+        }, []);
+
     const memoizedContact = useMemo(() => {
         return (
-            <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row mx-auto justify-between items-center bg-[#f9f9f9] p-16 lg:py-20 lg:px-36">
+            <div data-aos="fade-down" className="flex flex-col gap-8 lg:gap-0 lg:flex-row mx-auto justify-between items-center bg-[#f9f9f9] p-16 lg:py-20 lg:px-36">
                 <div className="lg:w-1/2 mb-8 md:mb-0">
                     <h2 className="text-4xl md:text-5xl font-bold text-black mb-12 lg:mb-6">
                         Have a Project Idea?

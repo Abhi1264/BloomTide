@@ -1,10 +1,20 @@
-import React, { useMemo } from "react";
-import earth from "../assets/earth.png";
+import React, { useMemo, useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";import earth from "../assets/earth.png";
 
 const Cta = () => {
+    useEffect(() => {
+            AOS.init({
+                duration: 500,
+                offset: 200,
+                once: false,
+                anchorPlacement: 'top-bottom',
+            });
+        }, []);
+
     const memoizedContent = useMemo(() => {
         return (
-            <div className="container mx-auto px-6 md:px-12">
+            <div data-aos="zoom-in" className="container mx-auto px-6 md:px-12">
                 <div className="flex justify-center items-center py-16 relative">
                     <div className="bg-gradient-to-b from-[#A4EAFF] to-[#08BFF7] rounded-2xl p-8 sm:p-12 shadow-xl text-center max-w-7xl relative z-10 overflow-hidden">
                         <div className="absolute left-10 top-1/5 h-1/2 w-1/4 bg-gradient-to-r from-white to-transparent opacity-50 blur-lg rounded-full"></div>

@@ -1,9 +1,20 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Process = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 500,
+            offset: 200,
+            once: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
+
     const content = useMemo(() => (
-        <div className="container mx-auto px-6 md:px-12">
+        <div className="container mx-auto px-6 md:px-12" data-aos="fade-right">
             <div className="flex flex-col sm:flex-col lg:flex-row items-center sm:items-start sm:gap-10">
                 <div className="lg:w-1/2 space-y-6">
                     <div>
@@ -17,7 +28,8 @@ const Process = () => {
                     <img
                         src="https://picsum.photos/600/400"
                         alt="Process image 1"
-                        className="rounded-lg w-full h-auto object-cover"
+                        className="rounded-lg w-full h-auto object-cover mb-4"
+                        data-aos="zoom-out"
                     />
                 </div>
 
@@ -39,7 +51,7 @@ const Process = () => {
                         </button>
                     </div>
 
-                    <div className="border py-6 md:py-9 md:px-4 px-0 rounded-xl border-[#D3DBE5] md:flex grid gap-6 items-center justify-center">
+                    <div data-aos="zoom-in" className="border py-6 md:py-9 md:px-4 px-0 rounded-xl border-[#D3DBE5] md:flex grid gap-6 items-center justify-center">
                         <div className="md:text-center text-left">
                             <h3 className="text-4xl font-semibold text-[#080F1A]">90%</h3>
                             <p className="mt-2 text-sm text-[#647491]">
@@ -63,6 +75,7 @@ const Process = () => {
                         src="https://picsum.photos/400/135"
                         alt="Process image 2"
                         className="rounded-lg w-full h-auto object-cover"
+                        data-aos="zoom-in"
                     />
                 </div>
             </div>

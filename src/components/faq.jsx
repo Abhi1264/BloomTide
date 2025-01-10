@@ -1,6 +1,17 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo, useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FAQ() {
+    useEffect(() => {
+        AOS.init({
+            duration: 500,
+            offset: 400,
+            once: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
+
     const [openFAQ, setOpenFAQ] = useState(null);
 
     const faqs = useMemo(() => [
@@ -31,7 +42,7 @@ function FAQ() {
     };
 
     return (
-        <div className="container mx-auto px-6 md:px-12 py-12">
+        <div data-aos="fade-up" className="container mx-auto px-6 md:px-12 py-12">
             <div className="flex flex-col md:flex-row">
                 <div>
                     <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
@@ -57,7 +68,7 @@ function FAQ() {
                             </span>
                         </button>
                         <div
-                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-screen" : "max-h-0"}`}>
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-full" : "max-h-0"}`}>
                             <p className="mt-2 text-md text-[#49617F]">
                                 {item.answer}
                             </p>

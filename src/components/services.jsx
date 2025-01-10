@@ -1,10 +1,22 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { IoCodeSlash, IoColorPalette, IoSettings } from "react-icons/io5";
 import { LuTabletSmartphone } from "react-icons/lu";
 import { GrLineChart } from "react-icons/gr";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Services() {
+
+  useEffect(() => {
+          AOS.init({
+              duration: 500,
+              offset: 400,
+              once: false,
+              anchorPlacement: 'top-bottom',
+          });
+      }, []);
+
   const services = useMemo(() => [
     {
       id: "web-dev",
@@ -51,7 +63,7 @@ export default function Services() {
   ], []);
 
   return (
-    <div className="container mx-auto px-6 md:px-12 pt-12">
+    <div className="container mx-auto px-6 md:px-12 pt-12" data-aos="fade-left">
       <div className="flex flex-col md:flex-row">
         <div>
           <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">

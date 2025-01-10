@@ -1,5 +1,7 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from 'react';
 import { RiDoubleQuotesL } from "react-icons/ri";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimonials() {
     const testimonials = useMemo(() => [
@@ -33,8 +35,17 @@ function Testimonials() {
         },
     ], []);
 
+    useEffect(() => {
+              AOS.init({
+                  duration: 500,
+                  offset: 400,
+                  once: false,
+                  anchorPlacement: 'top-bottom',
+              });
+          }, []);
+
     return (
-        <div className="lg:px-24 py-12 bg-[#f9f9f9] relative overflow-hidden">
+        <div className="lg:px-24 py-12 bg-[#f9f9f9] relative overflow-hidden" data-aos="fade-right">
             <div className="px-6 md:px-12 pt-12">
                 <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
                     Testimonials
