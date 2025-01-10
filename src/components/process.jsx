@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Process = () => {
     useEffect(() => {
         AOS.init({
-            duration: 500,
+            duration: 1000,
             offset: 200,
             once: false,
             anchorPlacement: 'top-bottom',
@@ -28,12 +28,12 @@ const Process = () => {
                     <img
                         src="https://picsum.photos/600/400"
                         alt="Process image 1"
-                        className="rounded-lg w-full h-auto object-cover mb-4"
+                        className="rounded-lg w-full h-auto object-cover "
                         data-aos="zoom-out"
                     />
                 </div>
 
-                <div className="lg:w-1/2 space-y-6 lg:mt-7">
+                <div className="lg:w-1/2 space-y-6 mt-6">
                     <div className="space-y-4">
                         <p className="text-md md:text-lg text-[#080F1A]">
                             Bloomtide Consulting delivers tailored solutions to drive

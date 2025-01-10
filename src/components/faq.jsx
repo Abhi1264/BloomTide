@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 function FAQ() {
     useEffect(() => {
         AOS.init({
-            duration: 500,
+            duration: 1000,
             offset: 400,
             once: false,
             anchorPlacement: 'top-bottom',
@@ -54,7 +54,7 @@ function FAQ() {
                 </div>
             </div>
 
-            <div>
+            <div className="w-full">
                 {faqs.map((item, index) => (
                     <div key={index} className="mt-6 border-t border-[#D7DBDE]">
                         <button
@@ -68,7 +68,7 @@ function FAQ() {
                             </span>
                         </button>
                         <div
-                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-full" : "max-h-0"}`}>
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-[9999px]" : "max-h-0"}`}>
                             <p className="mt-2 text-md text-[#49617F]">
                                 {item.answer}
                             </p>

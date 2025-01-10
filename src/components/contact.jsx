@@ -6,7 +6,7 @@ import questions from "../assets/questions.jpg";
 const Contact = () => {
     useEffect(() => {
             AOS.init({
-                        duration: 500,
+                        duration: 1000,
                         offset: 400,
                         once: false,
                         anchorPlacement: 'top-bottom',

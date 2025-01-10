@@ -5,7 +5,7 @@ import "aos/dist/aos.css";import earth from "../assets/earth.png";
 const Cta = () => {
     useEffect(() => {
             AOS.init({
-                duration: 500,
+                duration: 1000,
                 offset: 200,
                 once: false,
                 anchorPlacement: 'top-bottom',

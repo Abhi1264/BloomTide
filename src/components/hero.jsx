@@ -9,7 +9,7 @@ import mahaaai from "../assets/mahaaai.avif";
 
 const Hero = () => {
     useEffect(() => {
-        AOS.init({ duration: 500 });
+        AOS.init({ duration: 1000 });
     }, []);
 
     const heroContent = useMemo(() => (
