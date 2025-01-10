@@ -58,13 +58,13 @@ const Process = () => {
                                 Increase in operational efficiency
                             </p>
                         </div>
-                        <div className="md:text-center text-left border-t border-[#D3DBE5] md:border-l md:border-t-0">
+                        <div className="md:text-center text-left border-[#D3DBE5] md:border-x border-y md:border-y-0 py-5 md:py-0">
                             <h3 className="text-4xl font-semibold text-[#080F1A]">100%</h3>
                             <p className="mt-2 text-sm text-[#647491]">
                                 Customer satisfaction improvement
                             </p>
                         </div>
-                        <div className="md:text-center text-left border-t border-[#D3DBE5] md:border-l md:border-t-0">
+                        <div className="md:text-center text-left border-[#D3DBE5]">
                             <h3 className="text-4xl font-semibold text-[#080F1A]">99%</h3>
                             <p className="mt-2 text-sm text-[#647491]">
                                 Long-term client retention rate
