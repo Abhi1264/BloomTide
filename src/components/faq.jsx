@@ -41,7 +41,7 @@ function FAQ() {
         }, []);
 
     return (
-        <div data-aos="fade-left" className="container mx-auto px-6 md:px-12 py-12">
+        <div data-aos="fade-left" className="overflow-hidden container mx-auto px-6 md:px-12 py-12">
             <div className="flex flex-col md:flex-row">
                 <div>
                     <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">faqs</h3>
