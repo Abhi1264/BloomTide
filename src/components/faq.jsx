@@ -44,8 +44,8 @@ return (
     <div className="container mx-auto px-6 md:px-12 py-12" data-aos="fade-left">
         <div className="flex flex-col md:flex-row">
             <div>
-                <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">Our Services</h3>
-                <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-snug md:leading-normal">Services we offer</h1>
+                <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">faqs</h3>
+                <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-snug md:leading-normal">Have Questions?</h1>
             </div>
         </div>
         <div className="mt-2">
