@@ -4,7 +4,7 @@ import logo from "../assets/logoblue.svg";
 const Navbar = () => {
     const memoizedNavbar = useMemo(() => {
         return (
-            <nav className="sticky top-0 bg-white shadow-sm border-b z-50">
+            <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm border-b z-50">
                 <div className="container mx-auto flex items-center justify-between py-4 px-4 xl:px-2">
                     <img
                         draggable={false}
