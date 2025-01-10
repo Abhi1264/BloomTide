@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Process from './components/process'
 import Services from './components/services'
+import InfiniteScroll from './components/tech'
 import Testimonials from './components/testimonials'
 import FAQ from './components/faq'
 import Contact from './components/contact'
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <Process />
       <Services />
+      <InfiniteScroll />
       <Testimonials />
       <FAQ />
       <Contact />

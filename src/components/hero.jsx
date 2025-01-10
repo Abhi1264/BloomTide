@@ -21,7 +21,7 @@ const Hero = () => {
                     </h1>
                 </div>
             </div>
-            <div className="text-center xl:my-24 md:my-16 my-8" data-aos="zoom-out" data-aos-once="false">
+            <div className="text-center lg:my-36 md:my-16 my-8" data-aos="zoom-out" data-aos-once="false">
                 <div className="container mx-auto px-4">
                     <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-[#08BFF7] to-[#3386EE] text-transparent bg-clip-text" data-aos="fade-up" data-aos-once="false">
                         <span className="hidden md:inline-block">Innovative Enterprise Web &<br /></span>
@@ -29,8 +29,7 @@ const Hero = () => {
                         <span className="md:hidden block">Innovative Enterprise Web & Mobile App Development</span>
                     </h1>
                     <p className="mt-6 text-[#1f1f1f] text-md md:text-lg max-w-4xl mx-auto">
-                        Transform your business with cutting-edge web and mobile apps...
-                    </p>
+                    Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.</p>
                     <div className="flex items-center justify-center mt-4 space-x-1">
                         <IoIosStar className="text-[#FFC107]" />
                         <IoIosStar className="text-[#FFC107]" />

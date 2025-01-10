@@ -29,7 +29,7 @@ function Footer() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="space-y-6">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="" className='h-10'/>
                         <p className="text-sm md:bottom-0 leading-relaxed">
                             Bloom Tide Consulting delivers innovative IT solutions to help businesses thrive in the digital age. We focus on quality, collaboration, and cutting-edge technology to create tailored strategies that drive success.
                         </p>

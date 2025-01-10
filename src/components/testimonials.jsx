@@ -59,7 +59,7 @@ function Testimonials() {
                 <div className="hidden sm:block absolute top-20 mt-24 mr-4 lg:m-0 sm:left-3/4 transform -rotate-12 bg-[#9C1AFF] px-4 py-4 text-white font-medium text-sm rounded-lg">
                     400+ Successful Projects
                 </div>
-                <div className="flex gap-6 overflow-x-auto scrollbar-hide">
+                <div className="testimonials flex gap-6 overflow-x-auto scrollbar-hide">
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="flex-shrink-0 w-[23.5rem] bg-white shadow-sm rounded-lg p-6">
                             <RiDoubleQuotesL className="text-5xl text-[#B5C0C9]"/>
