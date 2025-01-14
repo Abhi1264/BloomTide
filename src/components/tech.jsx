@@ -36,7 +36,7 @@ const InfiniteScroll = () => {
           </div>
             <div className='flex overflow-hidden my-10 space-x-6'>
                 {[...Array(2)].map((_, index) => (
-                    <div key={index} className='slide flex animate-infinite-slide shrink-0 whitespace-nowrap gap-12 mx-2'>
+                    <div key={index} className='slide flex animate-infinite-slide shrink-0 whitespace-nowrap gap-10 w-[calc(2*var(--count)*(theme(gap.10)+20))]'>
                         {images.map((src, idx) => (
                             <div key={idx} className='h-20 w-20 flex justify-center items-center rounded-xl shadow-md mb-4 p-4'>
                                 <img src={src} alt={`logo-${idx}`} />

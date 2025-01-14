@@ -23,8 +23,8 @@ export default {
         },
       },
       animation: {
-        'infinite-slide': '10s slide infinite linear',
-        'infinite-slide-reverse': '10s slideReverse infinite linear',
+        'infinite-slide': '20s slide infinite linear',
+        'infinite-slide-reverse': '20s slideReverse infinite linear',
       },
     },
   },

@@ -18,18 +18,16 @@ const Hero = () => {
     const heroContent = useMemo(() => (
         <>
             <div className="relative" data-aos="fade-right" data-aos-once="false">
-                <div className="absolute inset-0 flex justify-center md:justify-center items-center -z-50 md:mt-96 mt-36">
-                    <h1 className="text-[5rem] md:text-[10.5rem] xl:text-[17rem] font-pacifico text-transparent bg-clip-text bg-gradient-to-r from-[#08BFF7] to-[#3386EE] opacity-10" aria-hidden="true">
+                <div className="absolute inset-0 flex justify-center md:justify-center items-center -z-50 md:mt-80 mt-36">
+                    <h1 className="text-[5rem] md:text-[11rem] lg:text-[13.5rem] xl:text-[19.5rem] font-pacifico text-transparent bg-clip-text bg-gradient-to-r from-[#08BFF7] to-[#3386EE] opacity-10" aria-hidden="true">
                         BloomTide
                     </h1>
                 </div>
             </div>
             <div className="text-center lg:mt-36 mt-28 mb-16 md:mb-20" data-aos="zoom-out" data-aos-once="false">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-[#08BFF7] to-[#3386EE] text-transparent bg-clip-text" data-aos="fade-up" data-aos-once="false">
-                        <span className="hidden md:inline-block">Innovative Enterprise Web &<br /></span>
-                        <span className="hidden md:inline-block">Mobile App Development</span>
-                        <span className="md:hidden block">Innovative Enterprise Web & Mobile App Development</span>
+                    <h1 className="text-4xl sm:text-7xl max-w-5xl font-bold bg-gradient-to-r from-[#08BFF7] to-[#3386EE] text-transparent bg-clip-text text-center mx-auto" data-aos="fade-up" data-aos-once="false">
+                        Innovative Enterprise Web & Mobile App Development
                     </h1>
                     <p className="mt-6 text-[#1f1f1f] text-md md:text-lg max-w-4xl mx-auto">
                         Transform your business with cutting-edge web and mobile apps. We design scalable solutions to elevate your brand and accelerate growth. Contact us today to build your enterprise's future.
@@ -52,18 +50,18 @@ const Hero = () => {
                             <MdOutlineArrowForwardIos />
                         </button>
                     </div>
-                    <div className="images relative flex items-center justify-center mt-8 -z-50">
+                    <div className="images relative flex items-center justify-center mt-8 -z-50 lg:max-w-7xl mx-auto">
                         <img
                             draggable={false}
                             src={seo}
                             alt=""
-                            className="hidden md:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
+                            className="hidden sm:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
                         />
                         <img
                             draggable={false}
                             src={software}
                             alt=""
-                            className="hidden md:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
+                            className="hidden sm:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
                         />
                         <img
                             draggable={false}
@@ -75,7 +73,7 @@ const Hero = () => {
                             draggable={false}
                             src={appdev}
                             alt=""
-                            className="hidden md:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-2xl translate-x-1/2 -translate-y-1/2 z-20"
+                            className="hidden sm:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-2xl translate-x-1/2 -translate-y-1/2 z-20"
                         />
                     </div>
                     <p className="py-8 text-[#647491]">Trusted by 100+ businesses:</p>

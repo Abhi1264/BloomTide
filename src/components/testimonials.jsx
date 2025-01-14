@@ -61,9 +61,9 @@ function Testimonials() {
                 </div>
                 <div className="testimonials flex gap-6 overflow-x-auto scrollbar-hide">
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="flex-shrink-0 w-[23.5rem] bg-white shadow-sm rounded-lg p-6">
+                        <div key={index} className="flex-shrink-0 w-[22rem] bg-white shadow-sm rounded-lg p-6">
                             <RiDoubleQuotesL className="text-5xl text-[#B5C0C9]"/>
-                            <p className="text-sm text-[#5F5F5D]">{testimonial.text}</p>
+                            <p className="text-sm text-[#5F5F5D] mt-2">{testimonial.text}</p>
                             <div className="mt-6 flex items-center gap-4">
                                 {testimonial.image && (<img src={testimonial.image} alt="User" className="w-10 h-10 rounded-full object-cover" />)}
                                 <div>
