@@ -57,7 +57,7 @@ import Typescript from "../assets/Technology-Logos/Typescript.svg";
 import VueJS from "../assets/Technology-Logos/VueJS.svg";
 import Webflow from "../assets/Technology-Logos/Webflow.svg";
 import WindiCSS from "../assets/Technology-Logos/WindiCSS.svg";
-import WordPress from "../assets/Technology-Logos/WordPress.svg";
+import WordPress from "../assets/Technology-Logos/Wordpress.svg";
 import XD from "../assets/Technology-Logos/XD.svg";
 
 const images = [
