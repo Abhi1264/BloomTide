@@ -18,13 +18,13 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
         slideReverse: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
       animation: {
-        'infinite-slide': '20s slide infinite linear',
-        'infinite-slide-reverse': '20s slideReverse infinite linear',
+        'infinite-slide': '120s slide infinite linear',
+        'infinite-slide-reverse': '120s slideReverse infinite linear',
       },
     },
   },

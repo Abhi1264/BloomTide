@@ -1,31 +1,40 @@
-import { useState } from 'react'
+import React from 'react'
 import Navbar from './components/navbar'
-import Hero from './components/hero'
-import Process from './components/process'
-import Services from './components/services'
-import InfiniteScroll from './components/tech'
-import Testimonials from './components/testimonials'
-import FAQ from './components/faq'
-import Contact from './components/contact'
-import Cta from './components/cta'
+import Home from './Home'
 import Footer from './components/footer'
+import CompanyPage from './components/companypage'
+import CareerPage from './components/careerspage'
+import ServicesPage from './components/servicespage'
+import BlogsPage from './components/blogspage'
+import { createBrowserRouter , RouterProvider } from "react-router-dom"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Process />
-      <Services />
-      <InfiniteScroll />
-      <Testimonials />
-      <FAQ />
-      <Contact />
-      <Cta />
-      <Footer />
-    </>
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><Navbar/><Home/><Footer/></>
+    },
+    {
+      path: "/CompanyPage",
+      element: <><Navbar/><CompanyPage/><Footer/></>
+    },
+    {
+      path: "/CareerPage",
+      element: <><Navbar/><CareerPage/><Footer/></>
+    },
+    {
+      path: "/ServicesPage",
+      element: <><Navbar/><ServicesPage/><Footer/></>
+    },
+    {
+      path: "/BlogsPage",
+      element: <><Navbar/><BlogsPage/><Footer/></>
+    }
+  ])
+  return(
+    <div>
+      <RouterProvider router={router}/>
+    </div>
   )
 }
 
