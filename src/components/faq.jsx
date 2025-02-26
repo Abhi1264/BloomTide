@@ -81,7 +81,7 @@ export default function FAQSection() {
               </span>
             </div>
             {activeIndex === index && (
-              <p className="mt-2 text-sm text-[#49617F]">{faq.answer}</p>
+              <p className="mt-2 text-md text-[#49617F] max-w-4xl">{faq.answer}</p>
             )}
           </div>
         ))}
