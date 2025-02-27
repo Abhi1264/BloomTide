@@ -7,6 +7,7 @@ import CareerPage from './components/careerspage'
 import ServicesPage from './components/servicespage'
 import BlogsPage from './components/blogspage'
 import { createBrowserRouter , RouterProvider } from "react-router-dom"
+import ContactusPage from './components/contactuspage'
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ function App() {
     {
       path: "/BlogsPage",
       element: <><Navbar/><BlogsPage/><Footer/></>
+    },
+    {
+      path: "/ContactusPage",
+      element: <><Navbar/><ContactusPage/><Footer/></>
     }
   ])
   return(

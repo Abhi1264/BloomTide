@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect } from "react";
+import {Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
@@ -17,7 +18,7 @@ const Hero = () => {
         <div className="relative" data-aos="fade-right" data-aos-once="false">
           <div className="absolute inset-0 flex justify-center md:justify-center items-center -z-50 md:mt-80 mt-36">
             <h1
-              className="text-[5rem] md:text-[11rem] lg:text-[13.5rem] xl:text-[19.5rem] font-pacifico text-transparent bg-clip-text bg-gradient-to-r from-[#08BFF7] to-[#3386EE] opacity-10"
+              className="text-7xl md:text-[11rem] lg:text-[13.5rem] xl:text-[19.5rem] font-pacifico text-transparent bg-clip-text bg-gradient-to-r from-[#08BFF7] to-[#3386EE] opacity-10"
               aria-hidden="true"
             >
               BloomTide
@@ -57,13 +58,13 @@ const Hero = () => {
               />
             </div>
             <div className="mt-6 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-              <button className="w-full md:w-auto bg-primaryBlue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 text-center">
+              <Link to="/ContactusPage" className="w-full md:w-auto bg-primaryBlue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 text-center" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 Schedule a Consultation
-              </button>
-              <button className="w-full md:w-auto bg-[#292929] text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+              </Link>
+              <Link to="/ServicesPage" className="w-full md:w-auto bg-[#292929] text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <span>Explore Services</span>
                 <MdOutlineArrowForwardIos />
-              </button>
+              </Link>
             </div>
             <div className="images relative flex items-center justify-center mt-8 -z-50 max-w-7xl mx-auto">
               <img
