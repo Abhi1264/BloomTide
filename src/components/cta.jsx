@@ -2,6 +2,7 @@ import React, { useMemo, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import earth from "../assets/earth.png";
+import { Link } from "react-router";
 
 const Cta = () => {
   useEffect(() => {
@@ -32,9 +33,11 @@ const Cta = () => {
               Ready to take your business to the next level? <br /> Contact us
               today to discuss how our IT consulting services can help.
             </p>
+            <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button className="mt-8 mb-4 px-6 py-3 bg-white text-primaryBlue font-semibold rounded-xl shadow-sm transition-all duration-300 transform hover:scale-105 relative z-10">
               Let’s Build the Future Together
             </button>
+            </Link>
           </div>
           <div className="absolute inset-0 blur-3xl bg-gradient-radial from-blue-300 to-transparent opacity-50"></div>
         </div>

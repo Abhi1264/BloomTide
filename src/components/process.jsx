@@ -25,16 +25,17 @@ const Process = () => {
               <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
                 Our Process
               </h3>
-              <h1 className="text-4xl lg:text-5xl font-bold text-black lg:mb-32 tracking-wide">
+              <h1 className="text-4xl lg:text-[3rem] leading-snug font-bold text-black lg:mb-16 tracking-wide">
                 Empowering Businesses for Sustainable Growth
               </h1>
             </div>
+            <div className="pt-3">
             <img
               src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg"
               alt="Process image 1"
               className="rounded-lg w-full h-[23rem] object-cover shadow-sm"
               data-aos="zoom-in"
-            />
+            /></div>
           </div>
 
           <div className="lg:w-1/2 space-y-6 mt-6">

@@ -29,9 +29,9 @@ const Navbar = () => {
           </Link>
           <div className="hidden md:flex items-center space-x-8 mr-16 ml-auto">
             <Link
-              to="/ServicesPage"
+              to="/Services"
               className={`font-medium transition ${
-                location.pathname === "/ServicesPage"
+                location.pathname === "/Services"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}
@@ -40,9 +40,9 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              to="/CompanyPage"
+              to="/Company"
               className={`font-medium transition ${
-                location.pathname === "/CompanyPage"
+                location.pathname === "/Company"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}
@@ -51,9 +51,9 @@ const Navbar = () => {
               Company
             </Link>
             <Link
-              to="/BlogsPage"
+              to="/Blog"
               className={`font-medium transition ${
-                location.pathname === "/BlogsPage"
+                location.pathname === "/Blog"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}
@@ -62,9 +62,9 @@ const Navbar = () => {
               Blog
             </Link>
             <Link
-              to="/CareerPage"
+              to="/Career"
               className={`font-medium transition ${
-                location.pathname === "/CareerPage"
+                location.pathname === "/Career"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}
@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
           </div>
           <Link
-            to="/ContactusPage"
+            to="/Contact"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <button className="bg-primaryBlue text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105">

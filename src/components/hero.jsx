@@ -58,10 +58,10 @@ const Hero = () => {
               />
             </div>
             <div className="mt-6 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-              <Link to="/ContactusPage" className="w-full md:w-auto bg-primaryBlue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 text-center" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              <Link to="/Contact" className="w-full md:w-auto bg-primaryBlue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 text-center" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 Schedule a Consultation
               </Link>
-              <Link to="/ServicesPage" className="w-full md:w-auto bg-[#292929] text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              <Link to="/Services" className="w-full md:w-auto bg-[#292929] text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <span>Explore Services</span>
                 <MdOutlineArrowForwardIos />
               </Link>
@@ -77,7 +77,7 @@ const Hero = () => {
                 draggable={false}
                 src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="software development"
-                className="absolute left-[17.5%] top-[67%] w-20 md:w-48 lg:w-72 xl:w-80 rounded-md md:rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 md:mt-4 lg:mt-8"
+                className="absolute left-[17.5%] top-[69%] w-20 md:w-48 lg:w-72 xl:w-80 rounded-md md:rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 md:mt-4 lg:mt-8"
               />
               <img
                 draggable={false}

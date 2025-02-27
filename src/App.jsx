@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from './components/navbar'
 import Home from './Home'
 import Footer from './components/footer'
-import CompanyPage from './components/companypage'
-import CareerPage from './components/careerspage'
-import ServicesPage from './components/servicespage'
-import BlogsPage from './components/blogspage'
+import Company from './components/Company'
+import Career from './components/career'
+import Services from './components/servicespage'
+import Blog from './components/blog'
+import Contact from './components/contact'
 import { createBrowserRouter , RouterProvider } from "react-router-dom"
-import ContactusPage from './components/contactuspage'
 
 function App() {
   const router = createBrowserRouter([
@@ -16,24 +16,24 @@ function App() {
       element: <><Navbar/><Home/><Footer/></>
     },
     {
-      path: "/CompanyPage",
-      element: <><Navbar/><CompanyPage/><Footer/></>
+      path: "/Company",
+      element: <><Navbar/><Company/><Footer/></>
     },
     {
-      path: "/CareerPage",
-      element: <><Navbar/><CareerPage/><Footer/></>
+      path: "/Career",
+      element: <><Navbar/><Career/><Footer/></>
     },
     {
-      path: "/ServicesPage",
-      element: <><Navbar/><ServicesPage/><Footer/></>
+      path: "/Services",
+      element: <><Navbar/><Services/><Footer/></>
     },
     {
-      path: "/BlogsPage",
-      element: <><Navbar/><BlogsPage/><Footer/></>
+      path: "/Blog",
+      element: <><Navbar/><Blog/><Footer/></>
     },
     {
-      path: "/ContactusPage",
-      element: <><Navbar/><ContactusPage/><Footer/></>
+      path: "/Contact",
+      element: <><Navbar/><Contact/><Footer/></>
     }
   ])
   return(

@@ -88,23 +88,23 @@ export default function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="group relative overflow-hidden rounded-lg bg-white transition-all duration-300 ease-in-out"
+            className="sm:px-8 px-2 sm-hover:py-4 group relative overflow-hidden bg-white hover:bg-[#f9f9f9] transition-all duration-300 ease-in-out"
           >
-            <div className="py-8 flex items-center justify-center">
-              <span className="text-sm font-medium text-primaryBlue">
+            <div className="py-6 flex items-center justify-center">
+              <p className="text-xl font-medium text-primaryBlue group-hover:text-[#171717]">
                 {service.number}
-              </span>
+              </p>
 
               <div className="flex-1 mx-8">
-                <h3 className="text-xl font-semibold text-[#1d1d1d]">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-[#1d1d1d] group-hover:text-primaryBlue">
                   {service.title}
                 </h3>
                 <div className="mt-4 transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0 group-hover:max-h-80 group-hover:opacity-100">
-                  <p className="text-sm leading-relaxed text-[#1d1d1d]">
+                  <p className="text-base leading-relaxed text-[#1d1d1d]">
                     {service.description}
                   </p>
                   <Link
-                    to="/ServicesPage"
+                    to="/Services"
                     onClick={() => window.scrollTo(0, 0)}
                   >
                     <button className="mt-4 px-4 py-2 rounded-full text-sm font-medium bg-primaryBlue text-white hover:bg-primaryBlue/90 transition-all duration-300 ease-in-out">

@@ -26,11 +26,11 @@ function Footer() {
   const quickLinks = useMemo(
     () => [
       { text: "Home", link: "/" },
-      { text: "Services", link: "/ServicesPage" },
-      { text: "Contact Us", link: "" },
+      { text: "Services", link: "/Services" },
+      { text: "Contact Us", link: "/Contact" },
       { text: "About Us", link: "" },
-      { text: "Career", link: "/CareerPage", isNew: true },
-      { text: "Blog", link: "/BlogsPage" },
+      { text: "Career", link: "/Career", isNew: true },
+      { text: "Blog", link: "/Blog" },
       { text: "Case Studies", link: "" },
     ],
     []
