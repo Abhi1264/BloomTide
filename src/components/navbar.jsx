@@ -4,14 +4,6 @@ import logo from "../assets/logoblue.svg";
 
 const Navbar = () => {
   const location = useLocation();
-
-  const getButtonClass = (path) =>
-    `font-medium transition ${
-      location.pathname === path
-        ? "text-primaryBlue"
-        : "text-[#3e3e3e] hover:text-primaryBlue"
-    }`;
-
   const memoizedNavbar = useMemo(() => {
     return (
       <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm border-b z-50">
@@ -51,9 +43,9 @@ const Navbar = () => {
               Company
             </Link>
             <Link
-              to="/Blog"
+              to="/BlogsPage"
               className={`font-medium transition ${
-                location.pathname === "/Blog"
+                location.pathname === "/BlogsPage"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}

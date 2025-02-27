@@ -2,14 +2,14 @@ import React, { useMemo, useEffect } from "react";
 import {Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { IoIosStar, IoIosStarHalf } from "react-icons/io";
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import ratingvector from "../assets/ratingvector.svg";
 import mahaaai from "../assets/mahaaai.avif";
 
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 800 });
   }, []);
 
   const heroContent = useMemo(
@@ -44,17 +44,17 @@ const Hero = () => {
               growth. Contact us today to build your enterprise's future.
             </p>
             <div className="flex items-center justify-center mt-4 space-x-1">
-              <IoIosStar className="text-[#FFC107]" />
-              <IoIosStar className="text-[#FFC107]" />
-              <IoIosStar className="text-[#FFC107]" />
-              <IoIosStar className="text-[#FFC107]" />
-              <IoIosStarHalf className="text-[#FFC107]" />
+              <IoIosStar className="text-[#FFC107] animate-pulse"/>
+              <IoIosStar className="text-[#FFC107] animate-pulse" />
+              <IoIosStar className="text-[#FFC107] animate-pulse" />
+              <IoIosStar className="text-[#FFC107] animate-pulse" />
+              <IoIosStarHalf className="text-[#FFC107] animate-pulse" />
               <span className="text-[#1f1f1f] px-2">4.7 (1552+ reviews)</span>
               <img
                 draggable={false}
                 src={ratingvector}
                 alt="rating vector"
-                className="h-4"
+                className="h-4 hover:-rotate-45 transition-all duration-300 ease-in-out"
               />
             </div>
             <div className="mt-6 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">

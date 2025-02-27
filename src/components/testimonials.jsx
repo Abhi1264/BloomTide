@@ -40,8 +40,8 @@ function Testimonials() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      offset: 400,
+      duration: 800,
+      offset: 200,
       once: false,
       anchorPlacement: "top-bottom",
     });

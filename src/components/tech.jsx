@@ -145,8 +145,8 @@ const InfiniteScroll = () => {
         <div className="absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         <div className="overflow-hidden">
           <div className="flex animate-infinite-slide shrink-0 flex-nowrap w-[750%]">
-            {[...Array(4)].map((_, slideIndex) => (
-              <div key={slideIndex} className="flex whitespace-nowrap">
+            {[...Array(4)].map((_, fadeIndex) => (
+              <div key={fadeIndex} className="flex whitespace-nowrap">
                 {images.map((image, idx) => (
                   <div
                     key={idx}
@@ -171,8 +171,8 @@ const InfiniteScroll = () => {
         <div className="absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         <div className="overflow-hidden">
           <div className="flex animate-infinite-slide-reverse shrink-0 flex-nowrap w-[750%]">
-            {[...Array(4)].map((_, slideIndex) => (
-              <div key={slideIndex} className="flex whitespace-nowrap">
+            {[...Array(4)].map((_, fadeIndex) => (
+              <div key={fadeIndex} className="flex whitespace-nowrap">
                 {reversedImages.map((image, idx) => (
                   <div
                     key={`reverse-${idx}`}

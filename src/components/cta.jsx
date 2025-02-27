@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const Cta = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       offset: 200,
       once: false,
       anchorPlacement: "top-bottom",
@@ -18,7 +18,7 @@ const Cta = () => {
     return (
       <div data-aos="zoom-in" className="container mx-auto px-6 md:px-12">
         <div className="flex justify-center items-center py-16 relative">
-          <div className="bg-gradient-to-b from-[#A4EAFF] to-[#08BFF7] rounded-2xl p-8 sm:p-12 shadow-xl text-center max-w-7xl relative z-10 overflow-hidden">
+          <div className="bg-gradient-to-b from-[#A4EAFF] to-[#08BFF7] rounded-xl p-8 sm:p-12 shadow-xl text-center max-w-7xl relative z-10 overflow-hidden">
             <div className="absolute left-10 top-1/5 h-1/2 w-1/4 bg-gradient-to-r from-white to-transparent opacity-50 blur-lg rounded-full"></div>
             <img
               src={earth}
@@ -34,7 +34,7 @@ const Cta = () => {
               today to discuss how our IT consulting services can help.
             </p>
             <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <button className="mt-8 mb-4 px-6 py-3 bg-white text-primaryBlue font-semibold rounded-xl shadow-sm transition-all duration-300 transform hover:scale-105 relative z-10">
+            <button className="mt-8 mb-4 px-6 py-3 bg-white text-primaryBlue font-semibold rounded-lg shadow-sm transition-all duration-300 transform hover:scale-105 relative z-10">
               Let’s Build the Future Together
             </button>
             </Link>

@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 export default function Services() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      offset: 400,
+      duration: 800,
+      offset: 200,
       once: false,
       anchorPlacement: "top-bottom",
     });
@@ -72,6 +72,7 @@ export default function Services() {
   );
 
   return (
+    <>
     <div className="container mx-auto px-6 md:px-12 pt-12" data-aos="fade-left">
       <div className="flex flex-col md:flex-row">
         <div>
@@ -83,12 +84,12 @@ export default function Services() {
           </h1>
         </div>
       </div>
-
-      <div className="grid grid-cols-1">
+      </div>
+      <div className="grid grid-cols-1" data-aos="fade-left">
         {services.map((service) => (
           <div
             key={service.id}
-            className="sm:px-8 px-2 sm-hover:py-4 group relative overflow-hidden bg-white hover:bg-[#f9f9f9] transition-all duration-300 ease-in-out"
+            className="px-36 rounded-lg sm-hover:py-4 group relative overflow-hidden bg-white hover:bg-[#f9f9f9] transition-all duration-300 ease-in-out"
           >
             <div className="py-6 flex items-center justify-center">
               <p className="text-xl font-medium text-primaryBlue group-hover:text-[#171717]">
@@ -121,6 +122,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </div>
+      </>
   );
 }
