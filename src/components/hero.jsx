@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import ratingvector from "../assets/ratingvector.svg";
-import mahaaai from "../assets/mahaaai.avif";
 
 const Hero = () => {
   useEffect(() => {
@@ -96,25 +95,25 @@ const Hero = () => {
             <div className="flex items-center justify-center space-x-2 md:space-x-20 overflow-x-hidden">
               <img
                 draggable={false}
-                src={mahaaai}
+                src="https://framerusercontent.com/images/JAaaicONeOdj6imSlBiNQb0OXKw.png?scale-down-to=512"
                 alt=""
                 className="h-3 md:h-8"
               />
               <img
                 draggable={false}
-                src={mahaaai}
+                src="https://framerusercontent.com/images/JAaaicONeOdj6imSlBiNQb0OXKw.png?scale-down-to=512"
                 alt=""
                 className="h-3 md:h-8"
               />
               <img
                 draggable={false}
-                src={mahaaai}
+                src="https://framerusercontent.com/images/JAaaicONeOdj6imSlBiNQb0OXKw.png?scale-down-to=512"
                 alt=""
                 className="h-3 md:h-8"
               />
               <img
                 draggable={false}
-                src={mahaaai}
+                src="https://framerusercontent.com/images/JAaaicONeOdj6imSlBiNQb0OXKw.png?scale-down-to=512"
                 alt=""
                 className="h-3 md:h-8"
               />
