@@ -22,15 +22,15 @@ const Process = () => {
               <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
                 Our Process
               </h3>
-              <h1 className="text-4xl lg:text-5xl font-bold text-black lg:mb-32 leading-snug md:leading-relaxed tracking-wide">
+              <h1 className="text-4xl lg:text-5xl font-bold text-black lg:mb-32 tracking-wide">
                 Empowering Businesses for Sustainable Growth
               </h1>
             </div>
             <img
-              src="https://picsum.photos/600/400"
+              src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg"
               alt="Process image 1"
-              className="rounded-lg w-full h-auto object-cover "
-              data-aos="zoom-out"
+              className="rounded-lg w-full h-[23rem] object-cover shadow-md"
+              data-aos="zoom-in"
             />
           </div>
 
@@ -76,9 +76,9 @@ const Process = () => {
               </div>
             </div>
             <img
-              src="https://picsum.photos/400/135"
+              src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Process image 2"
-              className="rounded-lg w-full h-auto object-cover"
+              className="rounded-lg w-full h-[11.4rem] object-cover shadow-md"
               data-aos="zoom-in"
             />
           </div>

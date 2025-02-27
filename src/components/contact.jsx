@@ -1,7 +1,6 @@
 import React, { useMemo, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import questions from "../assets/questions.jpg";
 
 const Contact = () => {
   useEffect(() => {
@@ -20,13 +19,13 @@ const Contact = () => {
         className="flex flex-col gap-8 lg:gap-0 lg:flex-row mx-auto justify-between items-center bg-[#f9f9f9] p-8 lg:py-20 lg:px-36"
       >
         <div className="lg:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-12 lg:mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-10">
             Have a Project Idea?
           </h2>
           <img
-            src={questions}
+            src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Questions"
-            className="rounded-xl w-full lg:w-11/12 h-auto object-cover"
+            className="rounded-xl w-full lg:w-11/12 h-96 object-cover shadow-md"
           />
         </div>
 

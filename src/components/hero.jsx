@@ -4,11 +4,7 @@ import "aos/dist/aos.css";
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import ratingvector from "../assets/ratingvector.svg";
-import mainimg from "../assets/mainimg.jpg";
 import mahaaai from "../assets/mahaaai.avif";
-import seo from "../assets/seo.jpg";
-import appdev from "../assets/appdev.jpg";
-import software from "../assets/software.jpg";
 
 const Hero = () => {
   useEffect(() => {
@@ -69,30 +65,30 @@ const Hero = () => {
                 <MdOutlineArrowForwardIos />
               </button>
             </div>
-            <div className="images relative flex items-center justify-center mt-8 -z-50 lg:max-w-7xl mx-auto">
+            <div className="images relative flex items-center justify-center mt-8 -z-50 max-w-7xl mx-auto">
               <img
                 draggable={false}
-                src={seo}
-                alt=""
-                className="hidden sm:block absolute left-[12.5%] top-[33%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mb-8"
+                src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="seo"
+                className="absolute left-[17.5%] top-[26%] w-20 md:w-48 lg:w-72 xl:w-80 rounded-md md:rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20"
               />
               <img
                 draggable={false}
-                src={software}
-                alt=""
-                className="hidden sm:block absolute left-[12.5%] top-[67%] w-80 rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 mt-4"
+                src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="software development"
+                className="absolute left-[17.5%] top-[67%] w-20 md:w-48 lg:w-72 xl:w-80 rounded-md md:rounded-lg shadow-2xl -translate-x-1/2 -translate-y-1/2 z-20 md:mt-4 lg:mt-8"
               />
               <img
                 draggable={false}
-                src={mainimg}
-                alt=""
-                className="rounded-xl w-3/4 relative z-10"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Web Development"
+                className="rounded-md md:rounded-xl w-2/3 relative z-10 shadow-xl"
               />
               <img
                 draggable={false}
-                src={appdev}
-                alt=""
-                className="hidden sm:block absolute right-[12.5%] top-[50%] w-96 rounded-lg shadow-2xl translate-x-1/2 -translate-y-1/2 z-20"
+                src="https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="app development"
+                className="absolute right-[17.5%] top-[50%] w-20 md:w-48 lg:w-64 xl:w-80 rounded-md md:rounded-lg shadow-2xl translate-x-1/2 -translate-y-1/2 z-20"
               />
             </div>
             <p className="py-8 text-[#647491]">Trusted by 100+ businesses:</p>
