@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useEffect, useRef, useState } from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,29 +9,36 @@ function Testimonials() {
       {
         text: "Bloomtide Consulting helped transform our operations with tailored solutions that boosted efficiency and productivity. Their team was professional, flexible, and delivered real results. Highly recommend!",
         logo: null,
-        name: "Name",
-        title: "Co-Founder, Company",
+        name: "John Doe",
+        title: "Co-Founder, TechCorp",
         image: null,
       },
       {
-        text: "Bloomtide Consulting helped transform our operations with tailored solutions that boosted efficiency and productivity. Their team was professional, flexible, and delivered real results. Highly recommend!",
+        text: "We partnered with Bloomtide Consulting to enhance our marketing strategy, and the results were outstanding. Their insights and execution helped us reach a broader audience.",
         logo: null,
-        name: "Name",
-        title: "Co-Founder, Company",
+        name: "Sarah Williams",
+        title: "Marketing Head, StartupX",
         image: null,
       },
       {
-        text: "Bloomtide Consulting helped transform our operations with tailored solutions that boosted efficiency and productivity. Their team was professional, flexible, and delivered real results. Highly recommend!",
+        text: "Working with Bloomtide was a game-changer for our business. Their data-driven approach and strategic guidance propelled our revenue growth beyond expectations. We're thrilled with the results!",
         logo: null,
-        name: "Name",
-        title: "Co-Founder, Company",
+        name: "Michael Lee",
+        title: "CEO, FinTech Solutions",
         image: null,
       },
       {
-        text: "Bloomtide Consulting helped transform our operations with tailored solutions that boosted efficiency and productivity. Their team was professional, flexible, and delivered real results. Highly recommend!",
+        text: "Bloomtide Consulting truly understands how to scale businesses. Their team provided the clarity and execution needed to refine our product-market fit. We're grateful for their expertise and support.",
         logo: null,
-        name: "Name",
-        title: "Co-Founder, Company",
+        name: "Emma Brown",
+        title: "Founder, HealthPlus",
+        image: null,
+      },
+      {
+        text: "Bloomtide Consulting helped us scale from one to ten. Their team provided the support and expertise needed to refine our business model. We're grateful for their support and guidance.",
+        logo: null,
+        name: "Jonathan Smith",
+        title: "Founder, ConnextX",
         image: null,
       },
     ],
@@ -46,6 +53,31 @@ function Testimonials() {
       anchorPlacement: "top-bottom",
     });
   }, []);
+
+  const scrollRef = useRef(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  const handleMouseDown = (e) => {
+    isDragging.current = true;
+    startX.current = e.pageX - scrollRef.current.offsetLeft;
+    scrollLeft.current = scrollRef.current.scrollLeft;
+    scrollRef.current.style.cursor = "grabbing";
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = x - startX.current;
+    scrollRef.current.scrollLeft = scrollLeft.current - walk;
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    scrollRef.current.style.cursor = "grab";
+  };
 
   return (
     <div
@@ -65,7 +97,14 @@ function Testimonials() {
         <div className="hidden sm:block absolute top-20 mt-24 mr-4 lg:m-0 sm:left-3/4 transform -rotate-12 bg-[#9C1AFF] px-4 py-4 text-white font-medium text-sm rounded-lg">
           400+ Successful Projects
         </div>
-        <div className="testimonials flex gap-6 overflow-x-auto scrollbar-hide">
+        <div
+          ref={scrollRef}
+          className="testimonials flex gap-6 overflow-x-auto scrollbar-hide cursor-grab select-none"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        >
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
