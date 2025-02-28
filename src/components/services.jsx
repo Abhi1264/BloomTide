@@ -24,7 +24,7 @@ export default function Services() {
         number: "01",
         title: "Web App Development",
         description:
-          "We build responsive and robust web applications tailored to your needs.",
+          "Get responsive and robust web applications built tailored to your needs.",
         icon: <IoCodeSlash className="w-8 h-8" />,
       },
       {

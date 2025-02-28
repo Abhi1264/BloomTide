@@ -7,6 +7,8 @@ import Career from './components/career'
 import Services from './components/servicespage'
 import Blog from './components/blog'
 import Contact from './components/contact'
+import About from './components/about'
+import CaseStudies from './components/casestudies'
 import { createBrowserRouter , RouterProvider } from "react-router-dom"
 
 function App() {
@@ -30,6 +32,14 @@ function App() {
     {
       path: "/Blog",
       element: <><Navbar/><Blog/><Footer/></>
+    },
+    {
+      path: "/About",
+      element: <><Navbar/><About/><Footer/></>
+    },
+    {
+      path: "/Casestudies",
+      element: <><Navbar/><CaseStudies/><Footer/></>
     },
     {
       path: "/Contact",

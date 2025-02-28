@@ -123,7 +123,7 @@ const images = [
   { name: "XD", src: XD },
 ];
 
-const InfiniteScroll = () => {
+const Technology = () => {
   const reversedImages = [...images].reverse();
 
   return (
@@ -156,7 +156,7 @@ const InfiniteScroll = () => {
                       src={image.src}
                       alt={image.name}
                       draggable={false}
-                      className="mb-2"
+                      className="mb-2 shadow-md rounded-2xl"
                     />
                     <p className="text-sm">{image.name}</p>
                   </div>
@@ -182,7 +182,7 @@ const InfiniteScroll = () => {
                       src={image.src}
                       alt={image.name}
                       draggable={false}
-                      className="mb-2"
+                      className="mb-2 shadow-md rounded-2xl"
                     />
                     <p className="text-sm">{image.name}</p>
                   </div>
@@ -196,4 +196,4 @@ const InfiniteScroll = () => {
   );
 };
 
-export default InfiniteScroll;
+export default Technology;

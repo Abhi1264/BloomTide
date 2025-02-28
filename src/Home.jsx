@@ -1,7 +1,7 @@
 import Hero from './components/hero'
 import Process from './components/process'
 import Services from './components/services'
-import InfiniteScroll from './components/tech'
+import Technology from './components/tech'
 import Testimonials from './components/testimonials'
 import FAQ from './components/faq'
 import Contact from './components/enquiry'
@@ -14,7 +14,7 @@ function Home() {
       <Hero />
       <Process />
       <Services />
-      <InfiniteScroll />
+      <Technology />
       <Testimonials />
       <FAQ />
       <Contact />

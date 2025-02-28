@@ -28,10 +28,10 @@ function Footer() {
       { text: "Home", link: "/" },
       { text: "Services", link: "/Services" },
       { text: "Contact Us", link: "/Contact" },
-      { text: "About Us", link: "" },
+      { text: "About Us", link: "/About" },
       { text: "Career", link: "/Career", isNew: true },
       { text: "Blog", link: "/Blog" },
-      { text: "Case Studies", link: "" },
+      { text: "Case Studies", link: "/Casestudies" },
     ],
     []
   );
@@ -58,7 +58,7 @@ function Footer() {
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className="text-sm hover:text-primaryBlue transition-colors"
+                  className="text-base md:text-sm hover:text-primaryBlue transition-colors"
                 >
                   <Link to="/Services" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{service}</Link>
                 </li>
@@ -74,7 +74,7 @@ function Footer() {
               {quickLinks.map((linkItem, index) => (
                 <li
                   key={index}
-                  className="text-sm hover:text-primaryBlue transition-colors"
+                  className="text-base md:text-sm hover:text-primaryBlue transition-colors"
                 >
                   {linkItem.link ? (
                     <Link to={linkItem.link} className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
