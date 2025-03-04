@@ -43,9 +43,9 @@ const Navbar = () => {
               Company
             </Link>
             <Link
-              to="/BlogsPage"
+              to="/Blog"
               className={`font-medium transition ${
-                location.pathname === "/BlogsPage"
+                location.pathname === "/Blog"
                   ? "text-primaryBlue"
                   : "text-[#3e3e3e] hover:text-primaryBlue"
               }`}
