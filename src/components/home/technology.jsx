@@ -1,64 +1,64 @@
 import React from "react";
-import AfterEffects from "../assets/Technology-Logos/AfterEffects.svg";
-import AlpineJS from "../assets/Technology-Logos/AlpineJS.svg";
-import AndroidStudio from "../assets/Technology-Logos/AndroidStudio.svg";
-import Angular from "../assets/Technology-Logos/Angular.svg";
-import AWS from "../assets/Technology-Logos/AWS.svg";
-import Azure from "../assets/Technology-Logos/Azure.svg";
-import Bash from "../assets/Technology-Logos/Bash.svg";
-import Bootstrap from "../assets/Technology-Logos/Bootstrap.svg";
-import BSD from "../assets/Technology-Logos/BSD.svg";
-import C from "../assets/Technology-Logos/C.svg";
-import CSharp from "../assets/Technology-Logos/CSharp.svg";
-import CPP from "../assets/Technology-Logos/C++.svg";
-import CSS from "../assets/Technology-Logos/CSS.svg";
-import Django from "../assets/Technology-Logos/Django.svg";
-import Docker from "../assets/Technology-Logos/Docker.svg";
-import DotNET from "../assets/Technology-Logos/DotNET.svg";
-import DynamoDB from "../assets/Technology-Logos/DynamoDB.svg";
-import Express from "../assets/Technology-Logos/Express.svg";
-import Figma from "../assets/Technology-Logos/Figma.svg";
-import Flutter from "../assets/Technology-Logos/Flutter.svg";
-import Framer from "../assets/Technology-Logos/Framer.svg";
-import Git from "../assets/Technology-Logos/Git.svg";
-import GitHub from "../assets/Technology-Logos/GitHub.svg";
-import GitLab from "../assets/Technology-Logos/GitLab.svg";
-import HTML from "../assets/Technology-Logos/HTML.svg";
-import Illustrator from "../assets/Technology-Logos/Illustrator.svg";
-import Java from "../assets/Technology-Logos/Java.svg";
-import JavaScript from "../assets/Technology-Logos/JavaScript.svg";
-import JQuery from "../assets/Technology-Logos/JQuery.svg";
-import Linux from "../assets/Technology-Logos/Linux.svg";
-import MongoDB from "../assets/Technology-Logos/MongoDB.svg";
-import MySQL from "../assets/Technology-Logos/MySQL.svg";
-import NestJS from "../assets/Technology-Logos/NestJS.svg";
-import Netlify from "../assets/Technology-Logos/Netlify.svg";
-import NextJS from "../assets/Technology-Logos/NextJS.svg";
-import NodeJS from "../assets/Technology-Logos/NodeJS.svg";
-import NuxtJS from "../assets/Technology-Logos/NuxtJS.svg";
-import Photoman from "../assets/Technology-Logos/Photoman.svg";
-import Photoshop from "../assets/Technology-Logos/Photoshop.svg";
-import PHP from "../assets/Technology-Logos/PHP.svg";
-import Premiere from "../assets/Technology-Logos/Premiere.svg";
-import Python from "../assets/Technology-Logos/Python.svg";
-import PyTorch from "../assets/Technology-Logos/PyTorch.svg";
-import R from "../assets/Technology-Logos/R.svg";
-import ReactJS from "../assets/Technology-Logos/React.svg";
-import Redux from "../assets/Technology-Logos/Redux.svg";
-import Ruby from "../assets/Technology-Logos/Ruby.svg";
-import SASS from "../assets/Technology-Logos/SASS.svg";
-import SolidJS from "../assets/Technology-Logos/SolidJS.svg";
-import Spring from "../assets/Technology-Logos/Spring.svg";
-import SQLite from "../assets/Technology-Logos/SQLite.svg";
-import StackOverFlow from "../assets/Technology-Logos/StackOverFlow.svg";
-import Swift from "../assets/Technology-Logos/Swift.svg";
-import TailwindCSS from "../assets/Technology-Logos/TailwindCSS.svg";
-import Typescript from "../assets/Technology-Logos/Typescript.svg";
-import VueJS from "../assets/Technology-Logos/VueJS.svg";
-import Webflow from "../assets/Technology-Logos/Webflow.svg";
-import WindiCSS from "../assets/Technology-Logos/WindiCSS.svg";
-import WordPress from "../assets/Technology-Logos/Wordpress.svg";
-import XD from "../assets/Technology-Logos/XD.svg";
+import AfterEffects from "../../assets/Technology-Logos/AfterEffects.svg";
+import AlpineJS from "../../assets/Technology-Logos/AlpineJS.svg";
+import AndroidStudio from "../../assets/Technology-Logos/AndroidStudio.svg";
+import Angular from "../../assets/Technology-Logos/Angular.svg";
+import AWS from "../../assets/Technology-Logos/AWS.svg";
+import Azure from "../../assets/Technology-Logos/Azure.svg";
+import Bash from "../../assets/Technology-Logos/Bash.svg";
+import Bootstrap from "../../assets/Technology-Logos/Bootstrap.svg";
+import BSD from "../../assets/Technology-Logos/BSD.svg";
+import C from "../../assets/Technology-Logos/C.svg";
+import CSharp from "../../assets/Technology-Logos/CSharp.svg";
+import CPP from "../../assets/Technology-Logos/C++.svg";
+import CSS from "../../assets/Technology-Logos/CSS.svg";
+import Django from "../../assets/Technology-Logos/Django.svg";
+import Docker from "../../assets/Technology-Logos/Docker.svg";
+import DotNET from "../../assets/Technology-Logos/DotNET.svg";
+import DynamoDB from "../../assets/Technology-Logos/DynamoDB.svg";
+import Express from "../../assets/Technology-Logos/Express.svg";
+import Figma from "../../assets/Technology-Logos/Figma.svg";
+import Flutter from "../../assets/Technology-Logos/Flutter.svg";
+import Framer from "../../assets/Technology-Logos/Framer.svg";
+import Git from "../../assets/Technology-Logos/Git.svg";
+import GitHub from "../../assets/Technology-Logos/GitHub.svg";
+import GitLab from "../../assets/Technology-Logos/GitLab.svg";
+import HTML from "../../assets/Technology-Logos/HTML.svg";
+import Illustrator from "../../assets/Technology-Logos/Illustrator.svg";
+import Java from "../../assets/Technology-Logos/Java.svg";
+import JavaScript from "../../assets/Technology-Logos/JavaScript.svg";
+import JQuery from "../../assets/Technology-Logos/JQuery.svg";
+import Linux from "../../assets/Technology-Logos/Linux.svg";
+import MongoDB from "../../assets/Technology-Logos/MongoDB.svg";
+import MySQL from "../../assets/Technology-Logos/MySQL.svg";
+import NestJS from "../../assets/Technology-Logos/NestJS.svg";
+import Netlify from "../../assets/Technology-Logos/Netlify.svg";
+import NextJS from "../../assets/Technology-Logos/NextJS.svg";
+import NodeJS from "../../assets/Technology-Logos/NodeJS.svg";
+import NuxtJS from "../../assets/Technology-Logos/NuxtJS.svg";
+import Photoman from "../../assets/Technology-Logos/Photoman.svg";
+import Photoshop from "../../assets/Technology-Logos/Photoshop.svg";
+import PHP from "../../assets/Technology-Logos/PHP.svg";
+import Premiere from "../../assets/Technology-Logos/Premiere.svg";
+import Python from "../../assets/Technology-Logos/Python.svg";
+import PyTorch from "../../assets/Technology-Logos/PyTorch.svg";
+import R from "../../assets/Technology-Logos/R.svg";
+import ReactJS from "../../assets/Technology-Logos/React.svg";
+import Redux from "../../assets/Technology-Logos/Redux.svg";
+import Ruby from "../../assets/Technology-Logos/Ruby.svg";
+import SASS from "../../assets/Technology-Logos/SASS.svg";
+import SolidJS from "../../assets/Technology-Logos/SolidJS.svg";
+import Spring from "../../assets/Technology-Logos/Spring.svg";
+import SQLite from "../../assets/Technology-Logos/SQLite.svg";
+import StackOverFlow from "../../assets/Technology-Logos/StackOverFlow.svg";
+import Swift from "../../assets/Technology-Logos/Swift.svg";
+import TailwindCSS from "../../assets/Technology-Logos/TailwindCSS.svg";
+import Typescript from "../../assets/Technology-Logos/Typescript.svg";
+import VueJS from "../../assets/Technology-Logos/VueJS.svg";
+import Webflow from "../../assets/Technology-Logos/Webflow.svg";
+import WindiCSS from "../../assets/Technology-Logos/WindiCSS.svg";
+import WordPress from "../../assets/Technology-Logos/Wordpress.svg";
+import XD from "../../assets/Technology-Logos/XD.svg";
 
 const images = [
   { name: "AfterEffects", src: AfterEffects },
@@ -128,7 +128,7 @@ const Technology = () => {
 
   return (
     <>
-      <div className="container mx-auto px-6 md:px-12 mt-12">
+      <div className="container mx-auto px-6 md:px-12 mt-20">
         <div className="flex flex-col md:flex-row">
           <div>
             <h3 className="text-md text-primaryBlue uppercase font-medium tracking-wide">
@@ -166,7 +166,7 @@ const Technology = () => {
           </div>
         </div>
       </div>
-      <div className="relative sm:mb-16">
+      <div className="relative mb-20">
         <div className="absolute top-0 left-0 h-full w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         <div className="overflow-hidden">

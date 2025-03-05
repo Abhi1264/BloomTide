@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import earth from "../assets/earth.png";
+import earth from "../../assets/earth.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import React from "react";
 
 const Cta = ({
-  children,
   className = "",
-  spotlightColor = "rgba(255, 255, 255, 0.25)",
+  spotlightColor = "#FFFFFF40",
 }) => {
   useEffect(() => {
     AOS.init({

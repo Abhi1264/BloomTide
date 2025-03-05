@@ -18,7 +18,7 @@ const Process = () => {
 
   const content = useMemo(
     () => (
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 py-12">
         <div className="flex flex-col sm:flex-col lg:flex-row items-center sm:items-start sm:gap-10">
           <div className="lg:w-1/2 space-y-6" data-aos="fade-right">
             <div>

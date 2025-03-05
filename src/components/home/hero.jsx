@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-import ratingvector from "../assets/ratingvector.svg";
+import ratingvector from "../../assets/ratingvector.svg";
 
 const Hero = () => {
   useEffect(() => {

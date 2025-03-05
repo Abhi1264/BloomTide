@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './components/navbar'
-import Home from './Home'
+import Home from './components/home/Home'
 import Footer from './components/footer'
-import Company from './components/company'
-import Career from './components/career'
-import Services from './components/servicespage'
-import Blog from './components/blog'
-import Contact from './components/contact'
-import About from './components/about'
-import CaseStudies from './components/casestudies'
+import Company from './components/company/company'
+import Career from './components/career/career'
+import Services from './components/services/services'
+import Blog from './components/blog/blog'
+import Contact from './components/contact/contact'
+import About from './components/about/about'
+import CaseStudies from './components/casestudies/casestudies'
 import { createBrowserRouter , RouterProvider } from "react-router-dom"
 
 function App() {
